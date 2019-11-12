@@ -21,12 +21,12 @@ client.init(function loaded () {
     , carbs: 0
     , fat: 0 // in grams
     , protein: 0 // in grams
-    , energy: 0 // in kJ
+    , energy: 0 // in kcal
     , gi: 2
     , unit: 'g'
   };
 
-  var foodunits = ['g', 'ml', 'pcs', 'oz'];
+  var foodunits = ['g', 'ml', 'szt.', 'łyżka', 'łyżeczka'];
   
   var foodrec = _.cloneDeep(foodrec_template);
 
@@ -228,7 +228,7 @@ client.init(function loaded () {
       .append($('<span>').attr('class','width150px').append(translate('Subcategory')))
       .append($('<span>').attr('class','width100px').append(translate('Fat [g]')))
       .append($('<span>').attr('class','width100px').append(translate('Protein [g]')))
-      .append($('<span>').attr('class','width100px').append(translate('Energy [kJ]')));
+      .append($('<span>').attr('class','width100px').append(translate('Energy [kcal]')));
 
     $('#fe_data').empty();
     
