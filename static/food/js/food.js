@@ -26,7 +26,7 @@ client.init(function loaded () {
     , unit: 'g'
   };
 
-  var foodunits = ['g', 'ml', 'pcs', 'oz'];
+  var foodunits = ['g', 'ml', 'szt.', 'łyżka', 'łyżeczka'];
   
   var foodrec = _.cloneDeep(foodrec_template);
 
