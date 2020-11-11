@@ -277,6 +277,7 @@
         if (_id) {
           var treatmentData;
           var tquery = '?find[boluscalc.foods._id]=' + _id + timerange;
+          datastorage.foodfiltername = _id;
           $.ajax('/api/v1/treatments.json'+tquery, {
             headers: client.headers()
             , success: function (xhr) {
@@ -302,6 +303,7 @@
           });
         }
       } else {
+        datastorage.foodfiltername = null;
         notesfilter();
       }
     }
