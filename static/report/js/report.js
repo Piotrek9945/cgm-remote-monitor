@@ -350,6 +350,7 @@
       if ($('#rp_enableeventtype').is(':checked')) {
         matchesneeded++;
         var eventtype = $('#rp_eventtype').val();
+        datastorage.foodeventtype = $('#rp_eventtype').val();
         if (eventtype) {
           var treatmentData;
           var tquery = '?find[eventType]=/' + eventtype + '/i';
