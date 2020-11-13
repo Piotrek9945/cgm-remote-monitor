@@ -347,6 +347,7 @@
     
     //event type filter
     function eventtypefilter() {
+      datastorage.foodeventtypechecked = $('#rp_enableeventtype').is(':checked');
       if ($('#rp_enableeventtype').is(':checked')) {
         matchesneeded++;
         var eventtype = $('#rp_eventtype').val();
